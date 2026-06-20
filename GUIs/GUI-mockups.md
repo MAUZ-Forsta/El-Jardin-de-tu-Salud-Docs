@@ -31,4 +31,4 @@
 - Mis datos.
 - Mis pedidos (historial).
 - Mis cursos (acceso a contenido).
-- Cupones disponibles.
+- Cupones disponibles. 

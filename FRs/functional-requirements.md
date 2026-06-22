@@ -1,20 +1,55 @@
-# Requisitos Funcionales - El Jardín de tu Salud
+# Requerimentos Funcionales - El Jardín de tu Salud
 
-## Módulo de Usuarios
-- **FR-01:** Registro con email, contraseña y datos básicos (nombre, fecha de nacimiento).
-- **FR-02:** Inicio de sesión (email + contraseña o con Google/Facebook).
-- **FR-03:** Recuperación de contraseña vía email.
+## Módulo de Usuarios y Control de Acceso
 
-## Módulo de Productos (Físicos)
-- **FR-04:** Visualización de catálogo con filtros por: categoría (medicamentos, snacks, suplementos), precio, puntuación.
-- **FR-05:** Vista detallada de producto con descripción, ingredientes, dosis sugerida, fotos y opiniones.
+- **FR-01:** Registro de usuarios con email, contraseña, nombre completo y teléfono de contacto.
+- **FR-02:** Inicio de sesión mediante email/contraseña.
+- **FR-03:** Recuperación de contraseña vía email con enlace temporal seguro.
+- **FR-04:** Perfil de usuario con opción para editar datos personales, historial de compras y preferencias.
+- **FR-05:** Roles de usuario:
+  - **Cliente:** Compra productos, accede a cursos, recibe boletines.
+  - **Administrador:** 
+    - **Gestión de la plataforma:** Gestión completa de inventario, usuarios, cursos y pedidos. 
+     - **Gestión de cursos:** Gestión de cursos, contenido y calendario de sesiones.
 
-## Módulo de Cursos (Digitales)
-- **FR-06:** Listado de cursos con descripción, instructor, duración y precio.
-- **FR-07:** Acceso al contenido del curso (videos/PDFs) solo después de la compra, desde el panel de usuario.
+---
 
-## Módulo de Carrito y Pago
-- **FR-08:** Agregar/eliminar productos del carrito.
-- **FR-09:** Aplicar códigos de descuento.
-- **FR-10:** Procesar pago con tarjeta de crédito/débito, transferencia o billetera electrónica.
-- **FR-11:** Envío de email de confirmación de compra con factura.
+## Módulo de Catálogo Interactivo
+
+- **FR-06:** Visualización de productos en formato grid/lista con paginación.
+
+- **FR-07:** Filtros dinámicos por:
+
+  - Categoría (Medicamentos, Plantas Medicinales, Snacks Saludables, Cursos).
+
+  - Precio (rango).
+
+  - Calificación (estrellas).
+
+  - Stock disponible.
+
+  - Etiquetas (orgánico, sin gluten, vegano, etc.).
+
+- **FR-08:** Búsqueda inteligente con autocompletado y sugerencias.
+
+- **FR-09:** Vista detallada de producto con:
+
+  - Imagen principal + galería de imágenes.
+
+  - Descripción completa.
+
+  - Ingredientes / composición.
+
+  - Beneficios y propiedades.
+
+  - Dosis o modo de uso sugerido.
+
+  - Opiniones y calificaciones de otros usuarios.
+
+  - Productos relacionados.
+
+---
+
+
+
+

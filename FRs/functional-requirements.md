@@ -50,6 +50,80 @@
 
 ---
 
+## Módulo de Inventario y Stock
 
+- **FR-10:** Gestión de inventario por categorías:
 
+  - **Medicamentos:** Control de lote, fecha de vencimiento, presentación (tabletas, jarabe, gotas).
 
+  - **Plantas Medicinales:** Control de peso, presentación (fresca, seca, en polvo), origen.
+
+  - **Snacks Saludables:** Control de fecha de caducidad, ingredientes alérgenos.
+
+  - **Cursos:** Control de cupos disponibles por sesión/fecha.
+
+- **FR-11:** Actualización automática de stock al realizar una compra.
+
+- **FR-12:** Alertas de stock bajo.
+
+- **FR-13:** Historial de movimientos de inventario (entradas, salidas, ajustes).
+
+---
+
+## Módulo de Métodos de Pago
+
+- **FR-14:** Integración con pasarelas de pago:
+
+  - Transferencia bancaria (depósito/transferencia).
+
+  - Billeteras digitales (MercadoPago, PayPal).
+
+- **FR-15:** Procesamiento de pagos con confirmación en tiempo real.
+
+- **FR-16:** Historial de transacciones por usuario.
+
+---
+
+## Módulo de Cursos y Calendario
+
+- **FR-17:** Catálogo de cursos con:
+
+  - Título, descripción, instructor, duración, nivel (básico/intermedio/avanzado).
+
+  - Precio (compra única) o suscripción .
+
+  - Imagen promocional y trailer (video corto).
+
+- **FR-18:** Sistema de calendario para:
+
+  - Programación de sesiones en vivo (clases virtuales).
+
+  - Reserva de cupos por sesión.
+
+  - Recordatorios automáticos por email y/o notificaciones.
+
+- **FR-19:** Contenido del curso estructurado en módulos:
+
+  - Videos (reproducción en streaming).
+
+  - PDFs, documentos descargables.
+
+  - Certificado de finalización (generado automáticamente).
+
+- **FR-20:** Acceso a cursos comprados desde el panel de usuario.
+
+- **FR-21:** Control de progreso del estudiante (porcentaje completado).
+
+- **FR-22:** Foro o espacio de preguntas para cada curso (interacción con instructor).
+
+- **FR-23:** Gestión de cursos para instructores:
+
+  - Crear/editar contenido.
+
+  - Programar sesiones en vivo.
+
+  - Responder preguntas de estudiantes.
+
+  - Ver estadísticas de participación.
+
+---

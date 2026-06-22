@@ -24,13 +24,9 @@
 
   - Precio (rango).
 
-  - Calificación (estrellas).
-
   - Stock disponible.
 
-  - Etiquetas (orgánico, sin gluten, vegano, etc.).
-
-- **FR-08:** Búsqueda inteligente con autocompletado y sugerencias.
+- **FR-08:** Búsqueda predictiva por coincidencia de texto.
 
 - **FR-09:** Vista detallada de producto con:
 
@@ -74,9 +70,7 @@
 
 - **FR-14:** Integración con pasarelas de pago:
 
-  - Transferencia bancaria (depósito/transferencia).
-
-  - Billeteras digitales (MercadoPago, PayPal).
+  - Billetera digitale (MercadoPago).
 
 - **FR-15:** Procesamiento de pagos con confirmación en tiempo real.
 
@@ -104,26 +98,59 @@
 
 - **FR-19:** Contenido del curso estructurado en módulos:
 
-  - Videos (reproducción en streaming).
+  - Videos (reproducción de videos externos).
 
   - PDFs, documentos descargables.
 
-  - Certificado de finalización (generado automáticamente).
-
 - **FR-20:** Acceso a cursos comprados desde el panel de usuario.
 
-- **FR-21:** Control de progreso del estudiante (porcentaje completado).
+---
 
-- **FR-22:** Foro o espacio de preguntas para cada curso (interacción con instructor).
+## Módulo de Boletines Informativos
 
-- **FR-23:** Gestión de cursos para instructores:
+- **FR-21:** Suscripción a boletines informativos por email desde el sitio web.
 
-  - Crear/editar contenido.
+- **FR-22:** Gestión de suscriptores (alta/baja manual o automática).
 
-  - Programar sesiones en vivo.
+- **FR-23:** Creación y envío de boletines
+  - Programación de envíos en fecha/hora específica.
 
-  - Responder preguntas de estudiantes.
+- **FR-24:** Plantillas predefinidas para boletines (promociones, novedades, cursos).
 
-  - Ver estadísticas de participación.
+- **FR-25:** Integración con servicios de email marketing (Mailchimp, SendGrid, etc.).
 
 ---
+
+## Módulo de Administración y Reportes
+
+- **FR-26:** Panel de administración con dashboard general (ventas, usuarios, inventario).
+
+- **FR-27:** Gestión completa de productos (CRUD: Crear, Leer, Actualizar, Eliminar).
+
+- **FR-28:** Gestión de pedidos con estados (pendiente, pagado, enviado, entregado, cancelado).
+
+- **FR-29:** Generación de reportes:
+
+  - Ventas diarias/semanales/mensuales.
+
+  - Productos más vendidos.
+
+  - Comportamiento de usuarios.
+
+  - Rendimiento de cursos.
+
+---
+
+## Módulo de Notificaciones
+
+- **FR-30:** Notificaciones por email para:
+
+  - Confirmación de registro.
+
+  - Confirmación de compra.
+
+  - Recordatorio de sesión de curso.
+
+  - Alerta de stock bajo.
+
+  - Confirmación de suscripción a boletín.

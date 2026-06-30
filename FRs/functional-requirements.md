@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Requerimientos Funcionales - El Jardin de tu Salud
 
 ## Proposito
@@ -248,8 +250,6 @@ El sistema debe permitir que un cliente solicite recibir un correo cuando un pro
 
 **Relaciones:** Catalogo, inventario, perfil de usuario y email.
 
----
-
 ## Modulo 7: Cursos con Videos Embebidos
 
 ### FR-26: Gestion de cursos
@@ -347,3 +347,5 @@ El sistema debe mostrar informacion de ventas diarias, semanales y mensuales; pr
 **Actores:** Administrador.
 
 **Relaciones:** Ventas, pedidos, pagos, cursos, inventario, usuarios y decisiones de negocio.
+
+</div>

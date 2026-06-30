@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Requisitos No Funcionales - El Jardin de tu Salud
 
 ## Proposito
@@ -179,7 +181,7 @@ Variables como credenciales, URLs de proveedores, umbrales de stock, moneda, imp
 
 ### NFR-25: Compatibilidad tecnologica
 
-La solucion debe usar tecnologias ampliamente soportadas. Como referencia, frontend con React o Vue.js; backend con Node.js Express o Springboot; base de datos PostgreSQL; hosting en  Vercel, Netlify o proveedor equivalente.
+La solucion debe usar tecnologias ampliamente soportadas. Como referencia, frontend con React o Vue.js; backend con Node.js Express o Springboot; base de datos PostgreSQL; hosting en Vercel, Netlify o proveedor equivalente.
 
 **Modulos relacionados:** Arquitectura general.
 
@@ -249,6 +251,7 @@ La plataforma debe funcionar en versiones recientes de Chrome, Edge, Firefox y S
 
 **Modulos relacionados:** Interfaz general.
 
+
 ### NFR-35: Responsabilidad sobre contenido de salud
 
 Las descripciones de productos, beneficios, modos de uso y advertencias deben presentarse de forma responsable, evitando promesas medicas no sustentadas. Cuando aplique, debe incluirse informacion de uso sugerido y advertencias visibles.
@@ -266,3 +269,5 @@ Imagenes de productos, videos de cursos y documentos descargables deben almacena
 Aunque la version inicial puede estar en español, el sistema debe evitar decisiones que impidan agregar otros idiomas, monedas o formatos regionales en el futuro.
 
 **Modulos relacionados:** Catalogo, checkout, pagos y reportes.
+
+</div>

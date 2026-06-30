@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Requisitos de Negocio - El Jardin de tu Salud
 
 ## 1. Proposito del Documento
@@ -189,3 +191,5 @@ Los cupones deben tener reglas claras de vigencia, monto minimo, categorias apli
 - Los requisitos no funcionales deben asegurar seguridad, rendimiento, disponibilidad, accesibilidad, mantenibilidad, trazabilidad y cumplimiento.
 - Los requisitos de usuario deben expresar estas necesidades desde la perspectiva de clientes y administradores.
 - Las historias de usuario deben convertir los requisitos en escenarios implementables y verificables.
+
+</div>

@@ -1,10 +1,10 @@
-# 🌿 El Jardín de tu Salud - Documentación
+# El Jardín de tu Salud - Documentación
 
 Este repositorio contiene toda la documentación técnica y funcional del sitio web de e-commerce **"El Jardín de tu Salud"**, especializado en productos naturistas, medicamentos herbales, alimentos saludables y cursos de bienestar.
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 📦 El-Jardin-de-tu-Salud-Docs/
@@ -50,7 +50,7 @@ Este repositorio contiene toda la documentación técnica y funcional del sitio 
 
 ---
 
-## 📖 Descripción de Carpetas
+## Descripción de Carpetas
 
 | Carpeta | Contenido |
 | :--- | :--- |
@@ -65,7 +65,7 @@ Este repositorio contiene toda la documentación técnica y funcional del sitio 
 
 ---
 
-## 🌳 Estructura Detallada
+## Estructura Detallada
 
 ```
 El-Jardin-de-tu-Salud-Docs/

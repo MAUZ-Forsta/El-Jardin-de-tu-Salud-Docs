@@ -31,4 +31,4 @@
 - Mis datos.
 - Mis pedidos (historial).
 - Mis cursos (acceso a contenido).
-- Cupones disponibles. 
+- Cupones disponibles: **componente visual diferido**, fuera de la primera versión según [DEC-04](<../Reports/Management/Contradicciones y decisiones pendientes.md#dec-04>), resuelta mediante [DEC-01](<../Reports/Management/Contradicciones y decisiones pendientes.md#dec-01>) y [NFR-38](<../NFRs/Non-functional-requirements.md#nfr-38-cupones-de-descuento>).

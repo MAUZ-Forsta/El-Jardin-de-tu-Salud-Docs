@@ -1,16 +1,17 @@
 ---
 tipo: guia
-estado: listo-para-revision
-actualizado: 2026-10-12
+estado: actualizado
+actualizado: 2026-10-16
 ---
-# Integración en el vault
+# Organización del vault
 
-Este paquete es **incremental**: añadir los archivos a la raíz del repositorio `El-Jardin-de-tu-Salud-Docs`, que puede abrirse directamente como vault de Obsidian. Las rutas preservan la documentación canónica existente en `BRs/`, `FRs/`, `NFRs/`, `URs/`, `UHs/` y `GUIs/`; **no reemplazar** esos documentos.
+Abrir la raíz del repositorio como vault de Obsidian. Los requisitos canónicos permanecen en BRs, FRs, NFRs, URs, UHs y GUIs. Toda la documentación técnica y de seguimiento se consolida en Reports, sin carpetas paralelas reports, ADRs, diagrams o 01 - Gestión.
 
-1. Crear una rama Git (por ejemplo `docs/sprint01-auth`).
-2. Descomprimir este paquete en la raíz del repositorio y revisar diffs; el archivo `01 - Gestión/Contradicciones y decisiones pendientes.md` actualiza la nota homónima de la fase anterior.
-3. Abrir `00 - Dashboard/Inicio - Sprint 01.md` en Obsidian.
-4. Completar las decisiones abiertas al contrastar código React, backlog Trello y cliente.
-5. Hacer commit cuando corresponda. No se ha modificado GitHub ni Trello automáticamente.
+- Dashboard: índices y roadmap; comenzar en [[Inicio - Backend]].
+- Architecture: arquitectura, reglas, modelos, ADR y Database.
+- Management: decisiones, riesgos y planificación; Sprints/Sprint 01 contiene el plan detallado.
+- Requirements: matrices de trazabilidad.
+- Development/API: contratos propuestos, no implementados.
+- QA: planes de pruebas sin evidencia de ejecución.
 
-No incluye Gantt fechado porque aún no se facilitaron las fechas y tarjetas verificadas. Ningún contrato aquí descrito está implementado o aprobado.
+ADR-001 registra el stack aprobado; ADR-002 el modelo relacional propuesto. El antiguo ADR-002 de autenticación se conserva como ADR-003 para evitar identificadores duplicados. Los enlaces fueron actualizados. No se modifican código, Trello ni alcance contractual ajeno a las decisiones autorizadas; no se realizan commit ni push.

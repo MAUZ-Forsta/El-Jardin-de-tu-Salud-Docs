@@ -1,125 +1,51 @@
 # El Jardín de tu Salud - Documentación
 
-Este repositorio contiene toda la documentación técnica y funcional del sitio web de e-commerce **"El Jardín de tu Salud"**, especializado en productos naturistas, medicamentos herbales, alimentos saludables y cursos de bienestar.
+Documentación funcional y técnica del e-commerce. Referencia de decisiones: 14 de octubre de 2026; actualización: 16 de octubre de 2026. La aprobación documental no acredita implementación ni pruebas.
 
----
+## Estructura
 
-## Estructura del Repositorio
-
-```
-📦 El-Jardin-de-tu-Salud-Docs/
-│
-├── 📁 BRs/
-│ └── business-requirements.md
-│
-├── 📁 FRs/
-│ └── functional-requirements.md
-│
-├── 📁 NFRs/
-│ └── non-functional-requirements.md
-│
-├── 📁 URs/
-│ └── user-requirements.md
-│
-├── 📁 UHs/
-│ └── user-stories.md
-│
-├── 📁 GUIs/
-│ ├── wireframes/
-│ │ ├── home-page.png
-│ │ ├── product-detail.png
-│ │ └── checkout-flow.png
-│ ├── mockups/
-│ │ └── figma-link.md
-│ └── ui-guidelines.md
-│
-├── 📁 diagrams/
-│ ├── er-diagram.md
-│ ├── flowcharts/
-│ │ └── purchase-flow.mermaid
-│ └── architecture/
-│ └── system-architecture.png
-│
-├── 📁 reports/
-│ ├── weekly-progress.md
-│ └── sprint-retrospectives.md
-│
-└── README.md
+```text
+BRs/                         Requisitos de negocio
+FRs/                         Requisitos funcionales
+NFRs/                        Requisitos no funcionales y capacidades diferidas
+URs/                         Requisitos de usuario
+UHs/                         Historias de usuario
+GUIs/                        Interfaces y mockups
+Reports/
+  Dashboard/                 Índices, roadmap y estado
+  Architecture/
+    ADR/                     Decisiones arquitectónicas
+    Database/                Modelo lógico y cardinalidades
+  Management/
+    Sprints/Sprint 01/       Plan detallado del primer sprint
+  Requirements/              Trazabilidad
+  Development/API/           Contratos propuestos
+  QA/                        Planes de pruebas
 ```
 
+## Requisitos canónicos
 
----
+- [Negocio](BRs/business-requirements.md)
+- [Funcionales](FRs/functional-requirements.md)
+- [No funcionales](NFRs/Non-functional-requirements.md)
+- [Usuario](URs/User-requirements.md)
+- [Historias](UHs/User-stories.md)
+- [Interfaces](GUIs/GUI-mockups.md)
 
-## Descripción de Carpetas
+## Navegación técnica
 
-| Carpeta | Contenido |
-| :--- | :--- |
-| **BRs/** | Requisitos de negocio: objetivos, alcance, público objetivo, KPIs. |
-| **FRs/** | Requisitos funcionales: características del sistema (módulos, acciones). |
-| **NFRs/** | Requisitos no funcionales: seguridad, rendimiento, usabilidad, escalabilidad. |
-| **URs/** | Requisitos de usuario: necesidades específicas expresadas por los stakeholders. |
-| **UHs/** | Historias de usuario en formato ágil (*Como... quiero... para...*). |
-| **GUIs/** | Diseños visuales: wireframes, mockups, flujos de navegación y guía de estilos. |
-| **diagrams/** | Diagramas técnicos: entidad-relación, flujos de proceso, arquitectura del sistema. |
-| **reports/** | Informes de avance, retrospectivas y métricas del proyecto. |
+- [[Inicio - Backend]] · [[Inicio - Sprint 01]]
+- [[ADR-001 - Backend y persistencia]]: **APROBADO — PENDIENTE DE IMPLEMENTACIÓN**.
+- [[ADR-002 - Modelo lógico relacional v0.1]]: **DISEÑO PROPUESTO — PENDIENTE DE VALIDACIÓN FINAL**.
+- [[ADR-003 - Autenticación y autorización]]: propuesta pendiente; antes identificado como ADR-002.
+- [[Arquitectura del backend]] · [[Capas del backend]] · [[Modelo lógico relacional v0.1]] · [[Reglas del backend]]
+- [[Contradicciones y decisiones pendientes]]: DEC-01 a DEC-05 resueltas el 2026-10-16.
+- [[Diferencias y decisiones pendientes]]: conflictos y validaciones restantes.
+- [[Plan de sprints]] · [[Roadmap]] · [[Matriz de trazabilidad]]
+- [[README - Integracion]]: guía de organización y consolidación.
 
----
+## Convenciones
 
-## Estructura Detallada
+Markdown relativo y enlaces internos Obsidian; YAML conservado en notas existentes. Mermaid para diagramas. Prefijos de ramas: `docs/`, `feat/`, `fix/` y `review/`. Cada documento tiene una ubicación canónica; evitar duplicados por mayúsculas o por estructura anterior.
 
-```
-El-Jardin-de-tu-Salud-Docs/
-│
-├── BRs/ # Requisitos de Negocio
-│ └── business-requirements.md # Objetivos, alcance, KPIs
-│
-├── FRs/ # Requisitos Funcionales
-│ └── functional-requirements.md # Módulos: usuarios, productos, cursos, pagos
-│
-├── NFRs/ # Requisitos No Funcionales
-│ └── non-functional-requirements.md # Seguridad, rendimiento, accesibilidad
-│
-├── URs/ # Requisitos de Usuario
-│ └── user-requirements.md # Necesidades de clientes y admins
-│
-├── UHs/ # Historias de Usuario
-│ └── user-stories.md # Formato: Como... quiero... para...
-│
-├── GUIs/ # Interfaces de Usuario
-│ ├── wireframes/ # Bocetos de baja fidelidad
-│ │ ├── home.png
-│ │ ├── product-detail.png
-│ │ └── checkout.png
-│ ├── mockups/ # Diseños de alta fidelidad
-│ │ └── figma-design.md # Enlace a Figma
-│ └── ui-guidelines.md # Paleta de colores, tipografía, componentes
-│
-├── diagrams/ # Diagramas técnicos
-│ ├── er-diagram.md # Modelo de base de datos (entidad-relación)
-│ ├── flowcharts/ # Flujos de proceso
-│ │ └── purchase-flow.mermaid # Flujo de compra (Mermaid)
-│ └── architecture/ # Arquitectura del sistema
-│ └── system-architecture.png # Microservicios / Monolito / Cloud
-│
-├── reports/ # Informes del proyecto
-│ ├── weekly-progress.md # Avance semanal
-│ └── sprint-retrospectives.md # Retrospectivas de sprints
-│
-└── README.md # Este archivo
-```
-
----
-## 📌 Convenciones de nombrado
-| **Tipo** | **Ejemplo** |
-| :--- | :--- |
-|**docs/** |docs/actualizar-FRs|
-|**feat/**  |feat/agregar-diagrama-ER|
-|**fix/**   |fix/corregir-typo-en-BRs|
-|**review/**|review/revisar-NFRs|
-
----
-## 🛠️ Tecnologías para Documentación
-- **Markdown:** Contenido textual.
-- **Mermaid:** Diagramas de flujo y secuencia (soporte nativo en Github).
-- **Figma/Draw.io:** Mockups y wirwframes.
-- **PlantUML:** Diagramas de clases y arquitectura.
+Cupones y Google OAuth quedan diferidos mediante NFR-38/39; no se incorporan automáticamente al Sprint 06. UR-03 exige cursos en línea, conservando materiales individuales descargables. FR-07 mantiene coincidencias parciales y totales. BR, HU y redacción de los FR permanecen intactos.

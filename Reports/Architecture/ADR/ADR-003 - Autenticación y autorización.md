@@ -1,12 +1,12 @@
 ---
 tipo: adr
-id: ADR-002
+id: ADR-003
 estado: propuesta
 fecha: 2026-10-12
-actualizado: 2026-10-12
+actualizado: 2026-10-16
 tags: [seguridad, auth, arquitectura]
 ---
-# ADR-002 — Autenticación y autorización
+# ADR-003 — Autenticación y autorización
 
 ## Estado
 **Propuesta**, no aprobada ni implementada. Complementa [[ADR-001 - Backend y persistencia]].
@@ -32,7 +32,7 @@ tags: [seguridad, auth, arquitectura]
 1. Topología del frontend/API (mismo sitio o dominios distintos) y comportamiento de cookies.
 2. Flujo de confirmación de email antes de habilitar cuenta (detalle operacional).
 3. Políticas exactas de longitud de contraseñas, caducidad, bloqueos y reautenticación.
-4. HU-02 menciona Google: pendiente de resolver.
+4. Google OAuth diferido por DEC-02 y NFR-39; se mantiene HU-02 y el acceso convencional.
 5. Modelo concreto de persistencia de sesión y proveedor de email.
 
 ## Consecuencias
@@ -40,3 +40,6 @@ Requiere pruebas de permisos por propietario, expiración/revocación, restablec
 
 ## Evidencia para aprobación
 Revisión de React, prueba de integración, amenaza básica, prueba E2E, estimación dentro del Sprint 01 y aprobación de decisión.
+
+## Identificador documental
+El antiguo ADR-002 de autenticación pasa a ADR-003 para reservar ADR-002 al modelo relacional solicitado. Su contenido sigue siendo propuesta pendiente de validación.

@@ -270,4 +270,22 @@ Aunque la version inicial puede estar en español, el sistema debe evitar decisi
 
 **Modulos relacionados:** Catalogo, checkout, pagos y reportes.
 
+---
+
+## Funcionalidades diferidas — excepción de clasificación
+
+Por decisión del proyecto, NFR-38 y NFR-39 se registran en este documento aunque describen capacidades funcionales, no atributos no funcionales de calidad. Su estado es **DIFERIDA**, no desarrollada ni probada. Las referencias existentes a cupones en NFR-05, NFR-23 y NFR-27 no los convierten en una dependencia de la primera versión.
+
+### NFR-38: Cupones de descuento
+
+Funcionalidad diferida, no obligatoria para la primera versión. Se planifica para la fase final o una versión posterior, sujeta a planificación y tiempo disponible, sin incorporación automática al Sprint 06. El checkout inicial y el cálculo inicial de pagos no dependerán de la aplicación ni de la administración de cupones. Los descuentos porcentuales de productos son una regla distinta y conservan su alcance vigente.
+
+**Trazabilidad:** [BR-12](<../BRs/business-requirements.md#br-12-cupones-controlados>), [HU-05](<../UHs/User-stories.md>), [DEC-01](<../Reports/Management/Contradicciones y decisiones pendientes.md#dec-01>) y [DEC-04](<../Reports/Management/Contradicciones y decisiones pendientes.md#dec-04>).
+
+### NFR-39: Autenticación con Google
+
+Funcionalidad diferida, no obligatoria para la primera versión. Se mantiene el registro e inicio de sesión convencional con correo y contraseña. FR-01 a FR-05 permanecen vigentes sin modificaciones. Google OAuth queda sujeto a planificación posterior y tiempo disponible, sin incorporación automática al Sprint 06.
+
+**Trazabilidad:** [HU-02](<../UHs/User-stories.md>), [FR-01 a FR-05](<../FRs/functional-requirements.md>) y [DEC-02](<../Reports/Management/Contradicciones y decisiones pendientes.md#dec-02>).
+
 </div>

@@ -1,7 +1,7 @@
 ---
 tipo: diseno-dominio
 estado: borrador
-actualizado: 2026-10-12
+actualizado: 2026-10-16
 tags: [poo, dominio, pendiente-validacion]
 ---
 # Modelo de dominio — borrador
@@ -10,9 +10,9 @@ tags: [poo, dominio, pendiente-validacion]
 
 | Concepto candidato | Fuente documental | Regla por aclarar |
 |---|---|---|
-| Cuenta / Usuario / Rol | FR-01 a FR-05; BR-06 | permisos, recuperación y política de sesiones |
+| Cuenta / Usuario / Rol | FR-01 a FR-05; BR-06 | permisos fijos ADMIN/CLIENT confirmados; recuperación y política de sesiones pendientes |
 | Producto físico | FR-06, FR-08, FR-21 | atributos, categorías y variantes |
-| Curso / Acceso a contenido | FR-09, FR-26 a FR-28; BR-08 | materiales descargables vs. descarga completa del curso |
+| Curso / Acceso a contenido | FR-09, FR-26 a FR-28; BR-08 | acceso en línea, sin consumo offline; materiales individuales descargables conservados (DEC-03) |
 | Carrito | FR-11 a FR-13 | persistencia y vigencia de precios |
 | Pedido | FR-17 a FR-20 | estados, cancelaciones y reembolsos |
 | Pago / Transacción | FR-14 a FR-16 | estados, conciliación e idempotencia |
@@ -23,7 +23,7 @@ tags: [poo, dominio, pendiente-validacion]
 ## Reglas a conservar
 - **BR-06:** compra con cuenta registrada.
 - **BR-07:** no vender productos sin stock ni cursos sin cupos disponibles cuando aplique.
-- **BR-08:** acceso al curso después del pago.
+- **BR-08:** acceso al curso después del pago o asignación administrativa autorizada.
 - **BR-11:** trazabilidad administrativa.
 
 ## Diseño POO: responsabilidades iniciales
@@ -41,5 +41,5 @@ tags: [poo, dominio, pendiente-validacion]
 ## Referencias
 - [[Arquitectura del backend]]
 - [[Contradicciones y decisiones pendientes]]
-- [BR](../../BRs/business-requirements.md)
-- [FR](../../FRs/functional-requirements.md)
+- [BR](<../../BRs/business-requirements.md>)
+- [FR](<../../FRs/functional-requirements.md>)

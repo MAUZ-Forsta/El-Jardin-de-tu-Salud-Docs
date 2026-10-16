@@ -1,12 +1,12 @@
 ---
 tipo: arquitectura
 estado: propuesta
-actualizado: 2026-10-12
+actualizado: 2026-10-16
 tags: [backend, poo, diseno]
 ---
 # Arquitectura del backend
 
-> Diseño propuesto. No representa código implementado ni contratos API existentes.
+> Stack y monolito modular aprobados mediante ADR-001, pendientes de implementación. La estructura detallada sigue siendo propuesta; no representa código ni contratos API existentes.
 
 ## Objetivo
 Construir un backend de e-commerce mantenible para cuentas, catálogo, compra, pagos, stock, cursos y administración, con seguridad y trazabilidad.
@@ -36,7 +36,7 @@ flowchart TD
 - `cart`: carrito y validación previa a compra.
 - `orders`: pedidos y transiciones de estado.
 - `payments`: intenciones, confirmación, reconciliación y webhooks.
-- `inventory`: movimientos, cupos y consistencia.
+- `inventory`: movimientos y consistencia de existencias físicas; cupos de cursos pendientes de validación.
 - `courses`: acceso autorizado a contenido.
 - `admin`: gestión y auditoría.
 - `notifications`: correo transaccional y boletines (alcance por validar).
@@ -81,5 +81,11 @@ Cada módulo podría incorporar `router.py`, `schemas.py`, `service.py`, `reposi
 - [[ADR-001 - Backend y persistencia]]
 - [[Modelo de dominio - borrador]]
 - [[Contradicciones y decisiones pendientes]]
-- [FR](../../FRs/functional-requirements.md)
-- [NFR](../../NFRs/Non-functional-requirements.md)
+- [FR](<../../FRs/functional-requirements.md>)
+- [NFR](<../../NFRs/Non-functional-requirements.md>)
+
+## Diseño complementario
+- [[Capas del backend]]
+- [[ADR-002 - Modelo lógico relacional v0.1]]
+- [[Modelo lógico relacional v0.1]]
+- [[Reglas del backend]]

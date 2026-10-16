@@ -1,7 +1,7 @@
 ---
 tipo: contrato-api
 estado: propuesta-no-implementada
-actualizado: 2026-10-12
+actualizado: 2026-10-16
 version: borrador-0
 ---
 # API propuesta — Usuarios y acceso
@@ -32,7 +32,7 @@ No registrar nunca contraseñas/tokens en logs o ejemplos con credenciales reale
 
 ## Reglas transversales
 - Toda verificación de permisos ocurre **en backend**, incluyendo propiedad del recurso.
-- Cookies seguras y protección CSRF según ADR-002; CORS restringido al frontend autorizado.
+- Cookies seguras y protección CSRF sujetas a validación de ADR-003; CORS restringido al frontend autorizado.
 - Errores sin revelar existencia de emails en recuperación o credenciales incorrectas.
 - Validación servidor de todos los campos; límite de peticiones de autenticación.
 - Decidir cómo se confirma email y cómo responde login antes del contrato final.
@@ -41,4 +41,4 @@ No registrar nunca contraseñas/tokens en logs o ejemplos con credenciales reale
 Formularios reales, manejo de sesión, ruta protegida, mensaje de confirmación, restablecimiento, carga, errores y renovación de sesión. **No verificados: requieren revisión del repositorio React.**
 
 ## Cambios documentales asociados
-[[ADR-002 - Autenticación y autorización]] · [[Modelo de clases - Usuarios y acceso]] · [[Plan de pruebas - Sprint 01]]
+[[ADR-003 - Autenticación y autorización]] · [[Modelo de clases - Usuarios y acceso]] · [[Plan de pruebas - Sprint 01]]

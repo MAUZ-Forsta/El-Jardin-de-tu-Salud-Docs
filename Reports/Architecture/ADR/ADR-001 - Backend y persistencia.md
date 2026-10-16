@@ -1,49 +1,31 @@
 ---
 tipo: adr
 id: ADR-001
-estado: propuesta
-fecha: 2026-10-12
-actualizado: 2026-10-12
-tags: [arquitectura, backend, decision-pendiente]
+estado: aprobado-pendiente-implementacion
+fecha: 2026-10-14
+actualizado: 2026-10-16
 ---
-# ADR-001 — Backend y persistencia
+# ADR-001 — Stack backend confirmado
 
-## Estado
-**Propuesta — NO aprobada ni implementada.** Requiere inspección del código React, restricciones del cliente y prueba técnica.
+Fecha de referencia: 14 de octubre de 2026. Actualización documental: 16 de octubre de 2026.
 
-## Contexto
-- Frontend React parcialmente desarrollado (estado de referencia al 09-10-2026).
-- Backend, base de datos y contratos reales de API pendientes de verificar/implementar.
-- Desarrollo principalmente individual; capacidad base 17 horas por semana; entrega objetivo 02-12-2026.
-- Mayor experiencia del desarrollador con Python que con Java; experiencia en Java sin uso empresarial de Spring.
+**Estado: APROBADO — PENDIENTE DE IMPLEMENTACIÓN**.
 
-## Decisión propuesta
-- **Backend:** Python + FastAPI.
-- **Organización:** monolito modular con orientación a objetos y servicios por caso de uso.
-- **Persistencia:** PostgreSQL.
-- **ORM:** SQLAlchemy 2.x.
-- **Migraciones:** Alembic (propuesto).
-- **Pruebas:** pytest y pruebas de integración con base de datos.
-- **Infraestructura:** PaaS y base administrada como primera alternativa; no proveedor definitivo.
+## Contexto y decisión
 
-## Alternativas
-- Spring Boot.
-- VPS/IaaS: control adicional, pero mayor responsabilidad de operación y seguridad.
+El frontend existente es React. Se aprueba Python con FastAPI, PostgreSQL para persistencia, SQLAlchemy 2.x como ORM y Alembic para migraciones futuras. La API será REST e intercambiará JSON. Mercado Pago será la integración futura de pagos.
 
-## Consecuencias y riesgos
-- POO no sustituye transacciones SQL, restricciones relacionales ni control de concurrencia.
-- Webhooks, reintentos y pagos necesitan idempotencia y validación de origen.
+La arquitectura será un monolito modular con separación de routers, servicios, repositorios, modelos y esquemas de validación. Se aplicará programación orientada a objetos donde aporte valor. La aprobación no acredita implementación: esta actualización no crea endpoints, modelos ni migraciones.
 
-## Criterios de validación
-1. Inspeccionar repositorio frontend y documentación de requisitos vigente.
-2. Prototipo FastAPI + PostgreSQL + migraciones y pruebas.
-3. Probar autenticación y autorización mínimas, sin credenciales reales en Git.
-4. Desplegar entorno de prueba y confirmar conectividad/observabilidad.
-5. Aprobar tecnologías y registrar fecha y decisión.
+## Consecuencias
+
+Los routers atenderán HTTP; los esquemas validarán entradas y salidas; los servicios coordinarán reglas y transacciones; los repositorios encapsularán persistencia; los modelos representarán datos. Los módulos compartirán una aplicación y una base PostgreSQL. No se seleccionan aún infraestructura, mecanismo de autenticación ni almacenamiento de archivos.
+
+NFR-21 respalda la separación modular. NFR-25 menciona Node.js Express o Springboot como referencia, por lo que existe una discrepancia con este stack aprobado. Se conserva el requisito original hasta conciliarlo; no se interpreta esa referencia como una implementación existente.
 
 ## Referencias
-- [[Arquitectura del backend]]
-- [[Modelo de dominio - borrador]]
-- [[Contradicciones y decisiones pendientes]]
-- [Requisitos funcionales](El-Jardin-de-tu-Salud-Docs/El_Jardin_Backend_POO_Documentacion_Fase_1/FRs/functional-requirements.md)
-- [Requisitos no funcionales](El-Jardin-de-tu-Salud-Docs/El_Jardin_Backend_POO_Documentacion_Fase_1/NFRs/Non-functional-requirements.md)
+
+- [Arquitectura propuesta](<../Capas del backend.md>).
+- [ADR-002](<ADR-002 - Modelo lógico relacional v0.1.md>).
+- [NFR originales](<../../../NFRs/Non-functional-requirements.md>): NFR-21 a NFR-25.
+- [Conflictos y decisiones pendientes](<../../Management/Diferencias y decisiones pendientes.md>).

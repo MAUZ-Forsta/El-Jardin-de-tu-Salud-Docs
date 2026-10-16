@@ -8,6 +8,17 @@ Este documento define las funciones que debe ofrecer la plataforma de comercio e
 
 La cantidad total de requerimientos funcionales se mantiene por debajo de 40. La plataforma no incluye cupones, pagos por PayPal, filtros especializados, foros, sesiones en vivo ni exportaciones de reportes en CSV o formatos similares. Los cursos se entregaran mediante contenido digital, principalmente videos embebidos de YouTube.
 
+## Nota de alcance — decisiones del 2026-10-16
+
+Las siguientes decisiones ajustan el alcance de la primera versión sin cambiar la redacción ni los identificadores de los requisitos funcionales:
+
+- DEC-01: los cupones se difieren mediante [NFR-38](<../NFRs/Non-functional-requirements.md#nfr-38-cupones-de-descuento>); no son dependencia del checkout inicial.
+- DEC-02: Google OAuth se difiere mediante [NFR-39](<../NFRs/Non-functional-requirements.md#nfr-39-autenticación-con-google>); se conservan FR-01 a FR-05 y el acceso convencional.
+- DEC-03: se excluye el consumo offline de cursos completos. Se mantienen los materiales individuales descargables de FR-27 y FR-28.
+- DEC-05: FR-07 permanece vigente, con búsqueda por coincidencia parcial o total y sin incorporar filtros especializados.
+
+Resoluciones y trazabilidad en [DEC-01 a DEC-05](<../Reports/Management/Contradicciones y decisiones pendientes.md>). Son decisiones documentales de alcance, no funcionalidades implementadas o probadas.
+
 ## Actores
 
 - **Cliente visitante:** Persona que navega el catalogo sin iniciar sesion. Puede consultar productos, cursos y contenido disponible, e iniciar el proceso de registro o compra.

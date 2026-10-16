@@ -12,7 +12,7 @@ Establecer base técnica y flujo mínimo seguro de registro, inicio/cierre de se
 
 ## Alcance preliminar
 1. Verificar rutas, formularios, estado y servicios en React; inventariar API esperada.
-2. Validar stack propuesto mediante prototipo FastAPI + PostgreSQL + SQLAlchemy + Alembic + pytest.
+2. Verificar técnicamente el stack aprobado, pendiente de implementación, mediante prototipo FastAPI + PostgreSQL + SQLAlchemy + Alembic + pytest.
 3. Definir migración para cuentas, roles/sesiones (modelo aún propuesto), sin tablas de cupones.
 4. Implementar flujo de registro con validación, unicidad y confirmación por correo según FR-01.
 5. Implementar inicio/cierre de sesión, control de acceso cliente/administrador y protección de recursos.
@@ -29,9 +29,12 @@ Establecer base técnica y flujo mínimo seguro de registro, inicio/cierre de se
 Código revisado · migración aplicada · autorización validada en backend · pruebas superadas · evidencia de ejecución · documentación y contrato actualizado. *Sprint terminado* solo cuando se revisen los criterios acordados y evidencia de todas las tareas comprometidas.
 
 ## Dependencias
-[[ADR-001 - Backend y persistencia]] · [[ADR-002 - Autenticación y autorización]] · [[API propuesta - Usuarios y acceso]] · [[Plan de pruebas - Sprint 01]] · [[Contradicciones y decisiones pendientes]]
+[[ADR-001 - Backend y persistencia]] · [[ADR-003 - Autenticación y autorización]] · [[API propuesta - Usuarios y acceso]] · [[Plan de pruebas - Sprint 01]] · [[Contradicciones y decisiones pendientes]]
 
 ## Registro a completar
 | Actividad / Trello | Requisito | Estimación h | Real h | Inicio/fin | Estado | Evidencia |
 |---|---|---|---|---|---|---|
 | Pendiente de vinculación | FR-01..FR-05 | Pendiente | — | Pendiente | No verificado | — |
+
+## Alcance confirmado al 2026-10-16
+Registro e inicio de sesión convencional. Google OAuth excluido del alcance inicial (DEC-02/NFR-39); cupones diferidos (DEC-01/NFR-38). Sin implementación acreditada por esta planificación. Véase [[Plan de sprints]].

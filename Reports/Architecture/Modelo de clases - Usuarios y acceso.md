@@ -1,7 +1,7 @@
 ---
 tipo: diseño-técnico
 estado: propuesta
-actualizado: 2026-10-12
+actualizado: 2026-10-16
 ---
 # Modelo de clases — Usuarios y acceso
 
@@ -80,4 +80,6 @@ classDiagram
 - Perfil: direcciones, preferencias, boletines e historial se modelarán cuando se inspeccionen requisitos completos y relaciones con otros módulos.
 
 ## Pendiente
-Tipos, nombres definitivos, cardinalidades reales, migraciones, estrategia de roles y modelo de correo se aprobarán tras inspección del frontend y requisitos relacionados.
+Tipos, nombres definitivos, cardinalidades reales, migraciones, representación de los roles fijos ADMIN/CLIENT y modelo de correo se aprobarán tras inspección del frontend y requisitos relacionados.
+
+Las sesiones y sus repositorios son condicionales a la estrategia de autenticación pendiente (ADR-003); no implican elección definitiva de almacenamiento. Google OAuth diferido (DEC-02/NFR-39).

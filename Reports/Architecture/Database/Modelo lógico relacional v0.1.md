@@ -30,3 +30,9 @@ Las relaciones con `course_enrollments` no fijan unicidad cliente/curso ni cupos
 Las FK no bastan para comprobar que una línea corresponde al curso inscrito, que el pedido pertenece al inscrito o que un pago está aprobado: deben definirse y verificarse estas invariantes transaccionalmente. Asimismo deben validarse cantidades positivas, porcentajes entre 0 y 100, importes no negativos, referencias externas únicas según proveedor y alcance de idempotencia; las restricciones concretas quedan pendientes.
 
 Ver [reglas de pagos, inventario y cursos](<../Reglas del backend.md>) y [brechas de cobertura y decisiones pendientes](<../../Management/Diferencias y decisiones pendientes.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+La tabla anterior describe el modelo objetivo. El subconjunto users/client_profiles ya existe en ORM y migración: User.profile es opcional 1 a 0..1 y ClientProfile.user_id es FK/PK con ON DELETE RESTRICT. El perfil tiene first_name, middle_name, last_name y second_last_name; teléfono/direcciones pendientes. No existe user_sessions ni las entidades comerciales.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

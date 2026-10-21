@@ -1,7 +1,7 @@
 ---
 tipo: trazabilidad
 estado: actualizado-documentalmente
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # Matriz de trazabilidad
 
@@ -18,6 +18,12 @@ Cobertura de las decisiones confirmadas; no sustituye la futura matriz completa 
 - [[Contradicciones y decisiones pendientes]]: resoluciones aprobadas el 2026-10-16.
 - [[Trazabilidad - Sprint 01]]: detalle de autenticación.
 - [[Plan de sprints]]: distribución de trabajo.
-- [[ADR-001 - Backend y persistencia]]: stack aprobado, pendiente de implementación.
+- [[ADR-001 - Backend y persistencia]]: stack aprobado, con implementación parcial de la base técnica.
 - [[ADR-002 - Modelo lógico relacional v0.1]]: diseño propuesto.
 - [[ADR-003 - Autenticación y autorización]]: estrategia propuesta pendiente.
+
+## Estado contrastado con código — 2026-10-21
+
+La persistencia de usuarios/perfiles y el core aportan avance parcial al Sprint 01. Ningún FR-01 a FR-05 se declara completo. Las cinco decisiones DEC conservan su estado y alcance.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

@@ -25,3 +25,9 @@ Los cursos podrán venderse en el mismo carrito de productos. Según [DEC-03](<.
 Las bajas de cuentas, productos o cursos deberán conservar la integridad histórica de pedidos, pagos y movimientos. No se interpretará «eliminar» como borrar en cascada registros comerciales. La política concreta de retención, anonimización y revocación de acceso queda por acordar.
 
 Fuentes: [BR](<../../BRs/business-requirements.md>) BR-06 a BR-11; [FR](<../../FRs/functional-requirements.md>) FR-01 a FR-05, FR-11 a FR-28 y FR-34; [NFR](<../../NFRs/Non-functional-requirements.md>) NFR-01 a NFR-06, NFR-13 y NFR-26 a NFR-30. Véanse [conflictos](<../Management/Diferencias y decisiones pendientes.md>) y [planificación](<../Management/Plan de sprints.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+Ya existen restricciones de correo único y roles, modelos de usuario/perfil, configuración CORS y errores. El resto de las reglas de autenticación, transacciones comerciales, pagos y cursos continúa pendiente.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

@@ -1,12 +1,12 @@
 ---
 tipo: arquitectura
 estado: propuesta
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 tags: [backend, poo, diseno]
 ---
 # Arquitectura del backend
 
-> Stack y monolito modular aprobados mediante ADR-001, pendientes de implementación. La estructura detallada sigue siendo propuesta; no representa código ni contratos API existentes.
+> Stack y monolito modular aprobados mediante ADR-001, con implementación inicial de aplicación, core, db y modelos de usuarios. La estructura completa y módulos candidatos siguen siendo propuesta; consultar el avance verificado al final.
 
 ## Objetivo
 Construir un backend de e-commerce mantenible para cuentas, catálogo, compra, pagos, stock, cursos y administración, con seguridad y trazabilidad.
@@ -89,3 +89,9 @@ Cada módulo podría incorporar `router.py`, `schemas.py`, `service.py`, `reposi
 - [[ADR-002 - Modelo lógico relacional v0.1]]
 - [[Modelo lógico relacional v0.1]]
 - [[Reglas del backend]]
+
+## Estado contrastado con código — 2026-10-21
+
+La estructura real contiene app/main.py, core/config.py, core/exceptions.py, db/base.py, db/session.py y modules/users/models.py, además de Alembic y tests. Solo GET /health es ruta funcional implementada; no verifica conexión a BD. Los módulos candidatos y capas de negocio no están completos.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

@@ -1,7 +1,7 @@
 ---
 tipo: plan-qa
 estado: propuesto
-actualizado: 2026-10-12
+actualizado: 2026-10-21
 ---
 # Plan de pruebas — Sprint 01
 
@@ -29,3 +29,9 @@ Commit/PR, versión de prueba, migración, resultado pytest, entorno, fecha y de
 - Errores de autorización o de filtración de datos bloquean aprobación.
 - Correo no entregado o reset inseguro bloquean conformidad FR-01/FR-03 si sus alcances se entregan.
 - Una pantalla React visible no constituye una prueba exitosa.
+
+## Estado contrastado con código — 2026-10-21
+
+Existen cuatro pruebas técnicas en tests/test_core.py y cuatro de modelos en tests/test_users_models.py. No acreditan los casos AUTH-01 a AUTH-12. tests/test_database.py es una utilidad, no un caso recogido por pytest. La evidencia de ejecución se registra por separado en Registro de avances.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

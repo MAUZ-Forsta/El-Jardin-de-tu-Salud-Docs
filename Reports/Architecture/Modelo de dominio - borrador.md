@@ -1,7 +1,7 @@
 ---
 tipo: diseno-dominio
 estado: borrador
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 tags: [poo, dominio, pendiente-validacion]
 ---
 # Modelo de dominio — borrador
@@ -43,3 +43,9 @@ tags: [poo, dominio, pendiente-validacion]
 - [[Contradicciones y decisiones pendientes]]
 - [BR](<../../BRs/business-requirements.md>)
 - [FR](<../../FRs/functional-requirements.md>)
+
+## Estado contrastado con código — 2026-10-21
+
+El inventario de conceptos sigue propuesto. Usuarios y perfiles cuentan con persistencia inicial; eso no completa registro, perfil funcional ni autorización.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

@@ -1,7 +1,7 @@
 ---
 tipo: diseño-técnico
 estado: propuesta
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # Modelo de clases — Usuarios y acceso
 
@@ -83,3 +83,9 @@ classDiagram
 Tipos, nombres definitivos, cardinalidades reales, migraciones, representación de los roles fijos ADMIN/CLIENT y modelo de correo se aprobarán tras inspección del frontend y requisitos relacionados.
 
 Las sesiones y sus repositorios son condicionales a la estrategia de autenticación pendiente (ADR-003); no implican elección definitiva de almacenamiento. Google OAuth diferido (DEC-02/NFR-39).
+
+## Estado contrastado con código — 2026-10-21
+
+El diagrama sigue conceptual. El código contiene User y ClientProfile; password_hash está en User. Credential, Session, PasswordResetToken, servicios y repositorios del diagrama no existen como implementación. Los nombres del perfil se almacenan separados; el teléfono no está modelado.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

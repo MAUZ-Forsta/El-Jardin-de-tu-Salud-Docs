@@ -1,7 +1,7 @@
 ---
 tipo: roadmap
 estado: plan-previsto
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # Roadmap
 
@@ -15,3 +15,9 @@ Objetivo de entrega: **2 de diciembre de 2026**. Capacidad de referencia: **17 h
 6. Sprint 06: P1, QA, seguridad, despliegue y entrega. Cupones y Google OAuth no se incorporan automáticamente; quedan sujetos a planificación y tiempo disponible.
 
 [[Plan de sprints]] · [[Contradicciones y decisiones pendientes]] · [[Diferencias y decisiones pendientes]] · [[Matriz de trazabilidad]]
+
+## Estado contrastado con código — 2026-10-21
+
+Sprint 01 tiene avance parcial en configuración, aplicación y persistencia. Se conserva la distribución de los seis sprints y el objetivo del 2 de diciembre; esta revisión no declara ningún sprint terminado.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

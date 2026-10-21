@@ -1,7 +1,7 @@
 ---
 tipo: contrato-api
 estado: propuesta-no-implementada
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 version: borrador-0
 ---
 # API propuesta — Usuarios y acceso
@@ -42,3 +42,9 @@ Formularios reales, manejo de sesión, ruta protegida, mensaje de confirmación,
 
 ## Cambios documentales asociados
 [[ADR-003 - Autenticación y autorización]] · [[Modelo de clases - Usuarios y acceso]] · [[Plan de pruebas - Sprint 01]]
+
+## Estado contrastado con código — 2026-10-21
+
+Las rutas de esta propuesta continúan sin implementar. La aplicación real solo declara GET /health (sin prefijo /api/v1), más documentación automática fuera de producción. La envoltura de errores existe en core/exceptions.py; no confirma contratos de autenticación.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

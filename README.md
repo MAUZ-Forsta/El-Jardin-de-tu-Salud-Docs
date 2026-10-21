@@ -1,6 +1,6 @@
 # El Jardín de tu Salud - Documentación
 
-Documentación funcional y técnica del e-commerce. Referencia de decisiones: 14 de octubre de 2026; actualización: 16 de octubre de 2026. La aprobación documental no acredita implementación ni pruebas.
+Documentación funcional y técnica del e-commerce. Referencia de decisiones: 14 de octubre de 2026; actualización: 21 de octubre de 2026. La aprobación documental no acredita implementación ni pruebas.
 
 ## Estructura
 
@@ -35,7 +35,7 @@ Reports/
 ## Navegación técnica
 
 - [[Inicio - Backend]] · [[Inicio - Sprint 01]]
-- [[ADR-001 - Backend y persistencia]]: **APROBADO — PENDIENTE DE IMPLEMENTACIÓN**.
+- [[ADR-001 - Backend y persistencia]]: **APROBADO — IMPLEMENTACIÓN PARCIAL**.
 - [[ADR-002 - Modelo lógico relacional v0.1]]: **DISEÑO PROPUESTO — PENDIENTE DE VALIDACIÓN FINAL**.
 - [[ADR-003 - Autenticación y autorización]]: propuesta pendiente; antes identificado como ADR-002.
 - [[Arquitectura del backend]] · [[Capas del backend]] · [[Modelo lógico relacional v0.1]] · [[Reglas del backend]]
@@ -49,3 +49,9 @@ Reports/
 Markdown relativo y enlaces internos Obsidian; YAML conservado en notas existentes. Mermaid para diagramas. Prefijos de ramas: `docs/`, `feat/`, `fix/` y `review/`. Cada documento tiene una ubicación canónica; evitar duplicados por mayúsculas o por estructura anterior.
 
 Cupones y Google OAuth quedan diferidos mediante NFR-38/39; no se incorporan automáticamente al Sprint 06. UR-03 exige cursos en línea, conservando materiales individuales descargables. FR-07 mantiene coincidencias parciales y totales. BR, HU y redacción de los FR permanecen intactos.
+
+## Estado contrastado con código — 2026-10-21
+
+El backend ya contiene FastAPI, CORS, manejo de errores, SQLAlchemy, Alembic y modelos/migraciones de users/client_profiles. Autenticación, sesiones de usuario y módulos comerciales pendientes. [Guía de ejecución del backend](../El-Jardin-de-tu-Salud-Backend/README.md) (requiere repositorios hermanos).
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

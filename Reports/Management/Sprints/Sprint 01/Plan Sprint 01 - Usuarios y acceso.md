@@ -2,7 +2,7 @@
 tipo: sprint
 sprint: 1
 estado: plan-propuesto
-actualizado: 2026-10-12
+actualizado: 2026-10-21
 capacidad_semanal_referencia_horas: 17
 ---
 # Plan Sprint 01 — Usuarios y acceso
@@ -12,8 +12,8 @@ Establecer base técnica y flujo mínimo seguro de registro, inicio/cierre de se
 
 ## Alcance preliminar
 1. Verificar rutas, formularios, estado y servicios en React; inventariar API esperada.
-2. Verificar técnicamente el stack aprobado, pendiente de implementación, mediante prototipo FastAPI + PostgreSQL + SQLAlchemy + Alembic + pytest.
-3. Definir migración para cuentas, roles/sesiones (modelo aún propuesto), sin tablas de cupones.
+2. Completar la verificación técnica del stack aprobado, con implementación parcial, mediante prototipo FastAPI + PostgreSQL + SQLAlchemy + Alembic + pytest.
+3. Verificar la migración existente para usuarios/perfiles y roles; resolver por separado las sesiones de autenticación (aún propuestas), sin tablas de cupones.
 4. Implementar flujo de registro con validación, unicidad y confirmación por correo según FR-01.
 5. Implementar inicio/cierre de sesión, control de acceso cliente/administrador y protección de recursos.
 6. Diseñar y priorizar recuperación de contraseña y perfil. Si no caben, registrar trabajo pendiente sin declarar conformidad FR-03/FR-04.
@@ -38,3 +38,9 @@ Código revisado · migración aplicada · autorización validada en backend · 
 
 ## Alcance confirmado al 2026-10-16
 Registro e inicio de sesión convencional. Google OAuth excluido del alcance inicial (DEC-02/NFR-39); cupones diferidos (DEC-01/NFR-38). Sin implementación acreditada por esta planificación. Véase [[Plan de sprints]].
+
+## Estado contrastado con código — 2026-10-21
+
+Los puntos de base técnica y persistencia tienen avance: configuración, FastAPI, errores, CORS y migraciones de usuarios/perfiles. No hay migración de sesiones de autenticación. Registro/login, hash, permisos, recuperación y correo siguen pendientes. No se acredita finalización del sprint.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

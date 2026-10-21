@@ -1,11 +1,11 @@
 ---
 tipo: dashboard
 estado: preparacion
-actualizado: 2026-10-12
+actualizado: 2026-10-21
 ---
 # Inicio — Sprint 01: Base y autenticación
 
-> Estado de referencia: React parcialmente desarrollado; backend y BD no verificados como implementados. ADR-001 está aprobado y pendiente de implementación; ADR-002 y ADR-003 siguen propuestos.
+> Revisión 2026-10-21: base FastAPI y persistencia de usuarios/perfiles implementadas en código. Migraciones aplicadas a PostgreSQL no verificadas. ADR-001 tiene implementación parcial; ADR-002 global y ADR-003 siguen propuestos. Autenticación pendiente.
 
 ## Navegación
 - [[Plan Sprint 01 - Usuarios y acceso]]
@@ -24,3 +24,9 @@ Cupones (NFR-38, DEC-01/04) y Google OAuth (NFR-39, DEC-02) diferidos, sin incor
 - Repositorio React: `package.json`, rutas, formularios y servicios existentes.
 - Tarjetas reales de Trello y Gantt con fechas.
 - Validación final del modelo relacional ADR-002 y de autenticación ADR-003, sesiones/cookies y servicio transaccional de email; ADR-001 ya aprobado.
+
+## Estado contrastado con código — 2026-10-21
+
+Existen las bases de aplicación y persistencia de usuarios/perfiles. Registro/login, sesiones de autenticación, recuperación, correos y control de acceso siguen pendientes.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

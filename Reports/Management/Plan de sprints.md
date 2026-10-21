@@ -6,7 +6,7 @@ Fecha objetivo de entrega: **2 de diciembre de 2026**. Capacidad aproximada: **1
 
 | Sprint | Distribución conservada | Dependencias por resolver |
 | :--- | :--- | :--- |
-| 01 | Configuración, persistencia, usuarios y autenticación convencional; Google OAuth excluido del alcance inicial (DEC-02). | Estrategia de autenticación, sesiones y perfil; validar modelo antes de migraciones. |
+| 01 | Configuración, persistencia, usuarios y autenticación convencional; Google OAuth excluido del alcance inicial (DEC-02). | Estrategia de autenticación, sesiones y perfil; verificar las migraciones existentes de usuarios/perfiles y validar el modelo antes de nuevas migraciones. |
 | 02 | Catálogo y especializaciones de productos físicos; búsqueda por coincidencia parcial y total conforme a FR-07 (DEC-05). | Snacks, variantes, presentaciones y requisitos de medicamentos. |
 | 03 | Carrito y pedidos, sin aplicación ni administración de cupones (DEC-01). | Históricos, descuentos, envío y compra registrada conforme a BR-06. |
 | 04 | Mercado Pago e inventario; sin lógica de cupones en el cálculo inicial de pagos (DEC-01). | Verificación, idempotencia, concurrencia, reservas y conciliación. |
@@ -18,3 +18,9 @@ La distribución no fija duraciones ni fechas individuales no aprobadas. Entre l
 La verificación futura deberá cubrir autenticación y permisos, importes históricos, no sobreventa bajo concurrencia, eventos duplicados y reintentos, pagos rechazados o pendientes, cancelaciones/reembolsos y acceso a cursos solo con autorización válida. No se crean pruebas de producción en esta tarea documental.
 
 Referencias: [ADR-001](<../Architecture/ADR/ADR-001 - Backend y persistencia.md>), [ADR-002](<../Architecture/ADR/ADR-002 - Modelo lógico relacional v0.1.md>), [reglas](<../Architecture/Reglas del backend.md>) y [conflictos, pendientes y brechas](<Diferencias y decisiones pendientes.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+En Sprint 01 ya existen la base técnica y migraciones users/client_profiles; quedan estrategia de autenticación y sus flujos. Las migraciones restantes requieren diseño validado. No se modifican fechas ni alcance de los otros sprints.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

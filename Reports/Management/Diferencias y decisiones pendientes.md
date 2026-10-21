@@ -2,7 +2,7 @@
 
 Referencia: 14 de octubre de 2026. Revisión documental: 16 de octubre de 2026.
 
-Se revisaron todos los archivos existentes de BRs, FRs, NFRs, URs, UHs, GUIs y los README de documentación y backend. La rama actual contiene arquitectura, ADR, planificación y trazabilidad en Reports/. Se integran aquí las decisiones anteriores y DEC-01 a DEC-05; los archivos técnicos siguen pendientes de implementación. Los BR y HU originales permanecen intactos. El 2026-10-16 se aprobaron [DEC-01 a DEC-05](<Contradicciones y decisiones pendientes.md>): UR-03 se actualiza y se agregan NFR-38/39 y notas de alcance. Estas resoluciones no acreditan funcionalidades implementadas. Los demás conflictos se conservan sin resolver automáticamente.
+Se revisaron todos los archivos existentes de BRs, FRs, NFRs, URs, UHs, GUIs y los README de documentación y backend. La rama actual contiene arquitectura, ADR, planificación y trazabilidad en Reports/. Se integran aquí las decisiones anteriores y DEC-01 a DEC-05; el diseño global sigue propuesto, con implementación parcial de la base técnica y persistencia de usuarios/perfiles verificada el 2026-10-21. Los BR y HU originales permanecen intactos. El 2026-10-16 se aprobaron [DEC-01 a DEC-05](<Contradicciones y decisiones pendientes.md>): UR-03 se actualiza y se agregan NFR-38/39 y notas de alcance. Estas resoluciones no acreditan funcionalidades implementadas. Los demás conflictos se conservan sin resolver automáticamente.
 
 ## Conflictos encontrados
 
@@ -42,3 +42,9 @@ La propuesta v0.1 no modela completamente opiniones (FR-10), avisos de stock (FR
 Consultar [ADR-001](<../Architecture/ADR/ADR-001 - Backend y persistencia.md>), [ADR-002](<../Architecture/ADR/ADR-002 - Modelo lógico relacional v0.1.md>), [modelo lógico](<../Architecture/Database/Modelo lógico relacional v0.1.md>), [reglas por módulo](<../Architecture/Reglas del backend.md>) y [plan](<Plan de sprints.md>).
 
 Fuentes originales: [BR](<../../BRs/business-requirements.md>), [FR](<../../FRs/functional-requirements.md>), [NFR](<../../NFRs/Non-functional-requirements.md>), [UR](<../../URs/User-requirements.md>), [HU](<../../UHs/User-stories.md>), [GUI](<../../GUIs/GUI-mockups.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+La revisión del código detectó diferencias en plantilla de entorno, dependencias, nombres de proyecto/base de pruebas y cobertura del perfil. Su detalle está en Registro de avances; no se corrigen requisitos ni se aprueban decisiones pendientes automáticamente.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

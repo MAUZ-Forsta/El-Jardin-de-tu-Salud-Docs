@@ -1,15 +1,15 @@
 ---
 tipo: adr
 id: ADR-001
-estado: aprobado-pendiente-implementacion
+estado: aprobado-implementacion-parcial
 fecha: 2026-10-14
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # ADR-001 — Stack backend confirmado
 
 Fecha de referencia: 14 de octubre de 2026. Actualización documental: 16 de octubre de 2026.
 
-**Estado: APROBADO — PENDIENTE DE IMPLEMENTACIÓN**.
+**Estado: APROBADO — IMPLEMENTACIÓN PARCIAL**. La aprobación original corresponde al 2026-10-14; la revisión de código al 2026-10-21.
 
 ## Contexto y decisión
 
@@ -29,3 +29,9 @@ NFR-21 respalda la separación modular. NFR-25 menciona Node.js Express o Spring
 - [ADR-002](<ADR-002 - Modelo lógico relacional v0.1.md>).
 - [NFR originales](<../../../NFRs/Non-functional-requirements.md>): NFR-21 a NFR-25.
 - [Conflictos y decisiones pendientes](<../../Management/Diferencias y decisiones pendientes.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+FastAPI, configuración, CORS, errores, SQLAlchemy y Alembic ya tienen implementación inicial. Existen modelos y migraciones de usuarios/perfiles. La separación completa en routers, servicios, repositorios y esquemas de negocio sigue pendiente; no se da por completado el monolito modular.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

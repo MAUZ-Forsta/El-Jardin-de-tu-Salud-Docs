@@ -3,7 +3,7 @@ tipo: adr
 id: ADR-002
 estado: propuesto-pendiente-validacion
 fecha: 2026-10-14
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # ADR-002 — Modelo lógico relacional v0.1
 
@@ -21,7 +21,7 @@ Se proponen `users`, `client_profiles` y, solo si lo requiere la estrategia de a
 
 Los criterios propuestos son UUID como claves primarias, claves foráneas para integridad referencial e índices según consultas, con restricciones UNIQUE, CHECK y NOT NULL según corresponda. Los importes usarán NUMERIC y las marcas temporales TIMESTAMPTZ. La precisión monetaria, moneda y redondeo quedan por validar.
 
-El correo será único sin distinguir mayúsculas, mediante una solución PostgreSQL a elegir. Las contraseñas solo se guardarán como hash seguro con sal; el algoritmo y sus parámetros deberán definirse. Los roles podrán representarse como un valor restringido en `users`; no se propone un sistema de permisos configurables.
+El correo debe ser único sin distinguir mayúsculas; la implementación inicial usa un índice único sobre lower(email). Las contraseñas solo se guardarán como hash seguro con sal; el algoritmo y sus parámetros deberán definirse. Los roles se representan en la implementación inicial como un valor restringido por CHECK en `users`; no se propone un sistema de permisos configurables.
 
 Cada producto deberá tener exactamente un tipo especializado; el discriminador, las claves y la validación entre especializaciones deberán garantizarlo de forma consistente. Una FK por sí sola no impide que un producto aparezca en dos tablas especializadas. La lista actual no define una especialización para snacks saludables exigidos por FR-06 y FR-21: esa cobertura queda sin resolver, no se excluyen del alcance aprobado.
 
@@ -39,3 +39,9 @@ Las cardinalidades tentativas se detallan en el [modelo lógico](<../Database/Mo
 - [Reglas por módulo](<../Reglas del backend.md>).
 - [Conflictos y pendientes](<../../Management/Diferencias y decisiones pendientes.md>).
 - [Requisitos funcionales originales](<../../../FRs/functional-requirements.md>).
+
+## Estado contrastado con código — 2026-10-21
+
+El diseño global conserva su estado propuesto. `users` y `client_profiles` ya tienen modelos y migración ee44ed5d90be; su aplicación a una base no se ha verificado. El correo usa índice único lower(email), los roles CHECK ADMIN/CLIENT y el perfil FK/PK user_id con RESTRICT. `user_sessions` y las demás entidades continúan pendientes. El texto de propuesta registra la decisión original, no ausencia actual de toda persistencia.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

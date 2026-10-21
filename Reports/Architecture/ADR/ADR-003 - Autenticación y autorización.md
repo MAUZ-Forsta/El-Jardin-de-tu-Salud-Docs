@@ -3,7 +3,7 @@ tipo: adr
 id: ADR-003
 estado: propuesta
 fecha: 2026-10-12
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 tags: [seguridad, auth, arquitectura]
 ---
 # ADR-003 — Autenticación y autorización
@@ -43,3 +43,9 @@ Revisión de React, prueba de integración, amenaza básica, prueba E2E, estimac
 
 ## Identificador documental
 El antiguo ADR-002 de autenticación pasa a ADR-003 para reservar ADR-002 al modelo relacional solicitado. Su contenido sigue siendo propuesta pendiente de validación.
+
+## Estado contrastado con código — 2026-10-21
+
+La autenticación sigue sin implementar. Las sesiones SQLAlchemy no resuelven la estrategia de sesión web. La columna password_hash y el CHECK de rol son bases de persistencia, no hashing ni autorización implementados.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.

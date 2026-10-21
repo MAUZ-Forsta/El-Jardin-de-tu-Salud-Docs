@@ -1,7 +1,7 @@
 ---
 tipo: trazabilidad
 estado: preliminar
-actualizado: 2026-10-16
+actualizado: 2026-10-21
 ---
 # Trazabilidad — Sprint 01
 
@@ -16,3 +16,9 @@ actualizado: 2026-10-16
 - Fuente: `FRs/functional-requirements.md` del repositorio.
 - Prioridades temporales del sprint se ajustarán contra Gantt y Trello; no se infiere que FR-01 a FR-05 estén terminados.
 - **Cupones**: diferidos mediante DEC-01/NFR-38, sin incorporación automática al Sprint 06; fuera de contratos/modelos/pruebas iniciales. Google OAuth diferido mediante DEC-02/NFR-39. FR-01 a FR-05 y HU originales intactos.
+
+## Estado contrastado con código — 2026-10-21
+
+FR-01/04: modelos users/client_profiles como base parcial, sin rutas, teléfono ni correo. FR-05: CHECK ADMIN/CLIENT, sin autorización por recurso. FR-02/03: flujos sin implementar. Las rutas de la tabla siguen propuestas. Los tests existentes son técnicos de core y persistencia; no equivalen a los escenarios AUTH completados.
+
+Véase [[Registro de avances]] para evidencia, diferencias y límites de la validación.
